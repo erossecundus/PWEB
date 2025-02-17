@@ -1,0 +1,23 @@
+body{
+    background-color: purple;
+    color: orange;
+    margin: 20px;
+    border: solid 1px black;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: blue;
+}
+
+h2 {
+    color: blueviolet;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: pink;
+}
