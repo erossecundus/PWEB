@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página da atividade 3">
+    <meta name="keywords" content="CSS">
+    <meta name="author" content="Eros">
+
+    <link rel="stylesheet" href="style.css">
+    <title>PWEB - Atividade 3</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Arquitetura de Software: Conceitos, Padrões, Escolha e Tendências</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#definicao">O que é Arquitetura de Software?</a></li>
+                <li><a href="#padroes">Padrões Arquiteturais</a></li>
+                <li><a href="#criterios">Critérios para Escolha da Arquitetura Adequada</a></li>
+                <li><a href="#tendencias">Tendências em Arquitetura de Software</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+        <section>
+            <p class="intro">
+                A arquitetura de software é um elemento essencial no desenvolvimento de sistemas, pois define a
+                organização e estrutura dos componentes de um software, bem como suas interações. A escolha da
+                arquitetura correta impacta diretamente a escalabilidade, manutenibilidade e eficiência do sistema. Este
+                artigo explora os conceitos fundamentais, principais padrões arquiteturais e critérios para a escolha
+                adequada da arquitetura de software.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="definincao">O que é Arquitetura de Software?</h2>
+            <article>
+                <p>
+                    A arquitetura de software refere-se à estrutura fundamental de um sistema, abrangendo suas camadas,
+                    módulos, componentes e relações. Ela serve como um plano que orienta o desenvolvimento e a evolução
+                    do
+                    software, garantindo que os requisitos técnicos e de negócios sejam atendidos de maneira eficiente.
+                </p>
+
+                <h3>Importância da Arquitetura de Software</h3>
+                <ul>
+                    <li>Proporciona uma visão macro do sistema, facilitando a compreensão e comunicação entre os
+                        envolvidos
+                        no projeto.</li>
+                    <li>Melhora a organização do código, tornando-o mais modular, reutilizável e de fácil manutenção.
+                    </li>
+                    <li>Permite maior escalabilidade, garantindo que o sistema possa crescer sem comprometer o
+                        desempenho.
+                    </li>
+                    <li>Reduz custos de desenvolvimento e manutenção ao longo do ciclo de vida do software.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="padroes">Padrões Arquiteturais</h2>
+            <article>
+                <p>Os padrões arquiteturais são soluções testadas e amplamente utilizadas para desafios comuns no
+                    desenvolvimento de software. Eles fornecem diretrizes para organizar e estruturar aplicações de
+                    maneira
+                    eficiente. Abaixo estão os principais padrões arquiteturais:</p>
+
+                <ol>
+                    <li>
+                        <h3>Arquitetura em Camadas (Layers)</h3>
+                        <ul>
+                            <li>Divide o software em camadas hierárquicas, onde cada camada possui responsabilidades bem
+                                definidas.
+                            </li>
+                            <li>Exemplo clássico: sistemas com Camada de <em>Apresentação</em>, <em>Camada de
+                                    Negócio</em>,
+                                <em>Camada de Dados</em> e <em>Camada de Infraestrutura</em>.
+                            </li>
+                            <li>Benefícios: separação de responsabilidades, maior facilidade de manutenção e
+                                reutilização de
+                                código.</li>
+                            <li>Desafios: pode gerar acoplamento excessivo entre camadas se não for bem projetado.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Arquitetura Cliente-Servidor (Client-Server)</h3>
+                        <ul>
+                            <li>Estrutura o sistema em duas partes principais:
+                                <ul>
+                                    <li><strong>Cliente:</strong> interface utilizada pelo usuário final para interagir
+                                        com
+                                        o sistema.</li>
+                                    <li><strong>Servidor:</strong> processa as solicitações dos clientes e fornece os
+                                        serviços necessários.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Amplamente utilizada em aplicações web, bancos de dados e redes empresariais.</li>
+                            <li>Benefícios: facilita a distribuição de responsabilidades e melhora a segurança e o
+                                gerenciamento de dados
+                                centralizados.</li>
+                            <li>Desafios: pode apresentar gargalos de desempenho dependendo da demanda do servidor.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Arquitetura de Microsserviços (Microservices)</h3>
+                        <ul>
+                            <li>Divide o sistema em serviços pequenos e independentes, cada um responsável por uma
+                                funcionalidade específica.</li>
+                            <li>Comunicação entre os serviços ocorre via APIs, permitindo maior flexibilidade e
+                                escalabilidade.</li>
+                            <li>Benefícios: facilidade de implantação e manutenção, melhor distribuição de carga e
+                                escalabilidade horizontal.</li>
+                            <li>Desafios: maior complexidade na comunicação entre serviços e necessidade de ferramentas
+                                para
+                                monitoramento e
+                                gerenciamento.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Arquitetura Hexagonal (Ports and Adapters)</h3>
+                        <ul>
+                            <li>Foca na independência da lógica de negócio em relação a frameworks, bancos de dados ou
+                                interfaces
+                                externas.</li>
+                            <li>O sistema é estruturado em torno de um núcleo central (domínio) que interage com
+                                adaptadores
+                                específicos para diferentes tecnologias.</li>
+                            <li>Benefícios: alta testabilidade, flexibilidade para mudanças tecnológicas e baixo
+                                acoplamento.</li>
+                            <li>Desafios: complexidade inicial para implementação e aprendizado.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Arquitetura Monolítica</h3>
+                        <ul>
+                            <li>Todo o sistema é desenvolvido como uma única aplicação coesa.</li>
+                            <li>Utilizado frequentemente em projetos menores ou quando a separação em serviços não é
+                                necessária.</li>
+                            <li>Benefícios: simplicidade de desenvolvimento, menor sobrecarga operacional e fácil
+                                depuração.
+                            </li>
+                            <li>Desafios: pode tornar-se difícil de escalar e manter à medida que cresce em tamanho e
+                                complexidade.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="criterios">Critérios para Escolha da Arquitetura Adequada</h2>
+            <article>
+                <p>A decisão sobre qual arquitetura utilizar depende de diversos fatores, incluindo:</p>
+                <ol>
+                    <li>Requisitos do Projeto: Complexidade, escalabilidade e desempenho desejado.</li>
+                    <li>Custo e Tempo de Desenvolvimento: Arquiteturas mais complexas demandam mais recursos e
+                        experiência
+                        da equipe.</li>
+                    <li>Tamanho da Equipe: Times pequenos podem se beneficiar de abordagens mais simples como
+                        monolíticos ou
+                        camadas, enquanto grandes equipes podem preferir microsserviços.</li>
+                    <li>Tecnologias e Ferramentas Disponíveis: Algumas arquiteturas são mais compatíveis com
+                        determinadas
+                        linguagens, frameworks e infraestrutura.</li>
+                    <li>Manutenibilidade e Evolução do Sistema: Se o sistema precisa ser flexível para mudanças futuras,
+                        arquiteturas desacopladas são mais recomendadas.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="tendencias">Tendências em Arquitetura de Software</h2>
+            <article>
+                <p>O campo da arquitetura de software está em constante evolução, e algumas tendências recentes incluem:
+                </p>
+                <ul>
+                    <li><strong>Arquiteturas Baseadas em Eventos:</strong> Utilização de mensagens assíncronas para
+                        comunicação entre componentes, melhorando desempenho e escalabilidade.</li>
+                    <li><strong>Serverless Computing:</strong> Delegação da execução de código para provedores de nuvem,
+                        eliminando a necessidade de gerenciamento de servidores.</li>
+                    <li><strong>Edge Computing:</strong> Processamento descentralizado, próximo ao usuário final,
+                        reduzindo
+                        latência e melhorando a performance.</li>
+                    <li><strong>Arquitetura de Microsserviços com Kubernetes:</strong> Uso de orquestração para
+                        gerenciar e
+                        escalar serviços de maneira eficiente.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="conclusao">Conclusão</h2>
+            <article>
+                <p>A escolha da arquitetura de software é um fator determinante para o sucesso de um projeto.
+                    Compreender os
+                    conceitos e padrões arquiteturais permite que desenvolvedores e arquitetos tomem decisões mais
+                    embasadas
+                    e
+                    criem sistemas escaláveis, flexíveis e de fácil manutenção. Acompanhar as tendências tecnológicas e
+                    avaliar
+                    constantemente as necessidades do projeto são práticas essenciais para garantir a qualidade da
+                    arquitetura
+                    de software adotada.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="referencias">Referências</h2>
+            <article>
+                <p>PESSÔA, Camila. <strong>Padrões arquiteturais: arquitetura de software descomplicada</strong>.  Disponível 
+                    <a href="https://www.alura.com.br/artigos/padroes-arquiteturais-arquitetura-software-descomplicada?srsltid=AfmBOoqnuk9xg63cknR0yOCQNE-AwrQJ3ECr6u7Y_pf8Wa3ngiKVO6jS.">
+                        aqui
+                    </a>.
+                </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Eros.</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    color: rgb(71, 71, 71);
+    margin: 20px;
+    border: solid 1px black;
+    border-radius: 16px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    border-radius: 16px 16px 0px 0px;
+    padding: 16px;
+    background: linear-gradient(180deg,  rgb(255,255,255) 0%, rgb(194, 244, 194) 100%);
+}
+
+a{
+    color: rgb(136, 182, 135);
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(104, 138, 103);
+    cursor: pointer;
+}
+
+nav {
+    background-color: rgb(194, 244, 194);
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav ul li a {
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    color: rgb(85, 157, 84);
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+}
+
+aside {
+    background-color: #ffd9a0;
+    color: #333333;
+    padding: 20px;
+    margin: 20px 0;
+    float: right;
+    width: 25%;
+}
+
+footer {
+    background-color: #fff;
+    color: #333333;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+ul li {
+    list-style-type: circle;
+    color: rgb(104, 138, 103);
+}
+ol li {
+    color: rgb(104, 138, 103);
+}
+
+pre {
+    background-color: #e0e0e0;
+    color: #333333;
+    padding: 5px 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+}
+table tr {
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+}
