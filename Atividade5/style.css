@@ -1,0 +1,76 @@
+.responsive {
+  text-align: center;
+  align-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+/* 420px ou menor  */
+@media (max-width: 420px) {
+  .responsive{
+    background-color: rgb(62, 107, 133);;
+  }
+  h2::before {
+    content: "cinza";
+  }
+}
+
+/* 768px ou menor  */
+@media (min-width: 421px) and (max-width: 768px) {
+  .responsive{
+    background-color: rgb(229, 135, 68);;
+  }
+  h2::before {
+    content: "laranja";
+  }
+}
+
+/* 1024px ou menor  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive{
+    background-color: rgb(229, 68, 197);;
+  }
+  h2::before {
+    content: "fucksia";
+  }
+}
+
+/* 1080px ou menor  */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .responsive{
+    background-color: rgb(235, 78, 89);;
+  }
+  h2::before {
+    content: "tomate";
+  }
+}
+
+/* 1366px ou menor  */
+@media (min-width: 1081px) and (max-width: 1366px) {
+  .responsive{
+    background-color: rgb(104, 41, 193);;
+  }
+  h2::before {
+    content: "roxo";
+  }
+}
+
+/* 1920px ou menor */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .responsive{
+    background-color: rgb(230, 192, 66);;
+  }
+  h2::before {
+    content: "ocre";
+  }
+}
+
+/* maior que 1920px */
+@media (min-width: 1921px) {
+  .responsive{
+    background-color: rgb(44, 183, 67);;
+  }
+  h2::before {
+    content: "verde";
+  }
+}
