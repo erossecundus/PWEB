@@ -5,18 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atividade 7 - Criando um Jogo</title>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Pedra - Papel - Tesoura</h1>
+  
+  <div class="container">
+    <img id="pedra-papel-tesoura" src="pedra-papel-tesoura.png" alt="pedra-papel-tesoura">
+    <h1>Pedra - Papel - Tesoura</h1>
 
-  <h2>Escolha um:</h2>
-
-  <div>
-    <button onClick="escolha('pedra')">Pedra</button>
-    <button onClick="escolha('papel')">Papel</button>
-    <button onClick="escolha('tesoura')">Tesoura</button>
+    <h2>Escolha um:</h2>
+  
+    <div class="botoes">
+      <button onClick="jogar('pedra')">Pedra</button>
+      <button onClick="jogar('papel')">Papel</button>
+      <button onClick="jogar('tesoura')">Tesoura</button>
+    </div>
   </div>
-
   
 </body>
 </html>

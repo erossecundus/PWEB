@@ -1,0 +1,39 @@
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+.botoes {
+  padding: 4px;
+}
+button {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 4px;
+  width: 80px;
+  box-sizing: border-box;
+  background-color: white;
+}
+button:hover {
+  font-weight: bold;
+  outline: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+img {
+  max-width: 20%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+.rotacionar {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}

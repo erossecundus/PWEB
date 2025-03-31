@@ -1,5 +1,15 @@
 let escolhaDoComputador;
 
+function jogar(escolhaDoUsuario) {
+  // girar a imagem só de farra
+  const imagem = document.getElementById("pedra-papel-tesoura");
+  imagem.classList.toggle("rotacionar");
+  
+  setTimeout(() => {
+    escolha(escolhaDoUsuario);
+  }, 1000);
+}
+
 function escolha(escolhaDoUsuario) {
   console.log("user " + escolhaDoUsuario);
 
@@ -46,7 +56,7 @@ function escolha(escolhaDoUsuario) {
     }
   }
 
-  alert(`Escolha do computador: ${escolhaDoComputador}\nSua escolha: ${escolhaDoUsuario}
+  alert(`Sua escolha: ${escolhaDoUsuario}\nEscolha do computador: ${escolhaDoComputador}
         \n${resultado}`);
   
 }
