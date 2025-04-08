@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 8 - Criando uma Pesquisa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="formulario">
+      <h1>Pesquisa de Opinião</h1>
+      <hr>
+  
+      <form id="formPesquisa">
+  
+        <div class="inputForm">
+          <p class="inputTitle">Idade:</p>
+          <div class="inputGroup">
+            <input type="number" name="inputIdade" id="inputIdade">
+          </div>
+        </div>
+  
+        <hr>
+
+        <div class="inputForm">
+          <p class="inputTitle">Sexo:</p>
+          <div class="inputGroup">
+            <label>
+              <input type="radio" value="feminino" name="inputSexo">
+              feminino
+            </label>
+            <label>
+              <input type="radio" value="masculino" name="inputSexo">
+              masculino
+            </label>
+            <label>
+              <input type="radio" value="outro" name="inputSexo">
+              outro
+            </label>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <div class="inputForm">
+          <p class="inputTitle">Sua opinião:</p>
+          <div class="inputGroup">
+            <label>
+              <input type="radio" value="1" name="inputOpiniao">
+              péssimo
+            </label>
+            <label>
+              <input type="radio" value="2" name="inputOpiniao">
+              regular
+            </label>
+            <label>
+              <input type="radio" value="3" name="inputOpiniao">
+              bom
+            </label>
+            <label>
+              <input type="radio" value="4" name="inputOpiniao">
+              ótimo
+            </label>
+          </div>
+        </div>
+        
+        <hr>
+        <br>
+  
+        <button type="button" onclick="salvar()">Enviar</button>
+      </form>
+    </div>
+    
+    <div id="resultado"></div>
+
+  </div>
+</body>
+</html>
