@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 9 - Quatro Funções</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quatro Funções</h1>
+    <hr>
+    <div class="exccs">
+      <div class="excc ex1">
+        <div class="exTitle">
+          <div class="etiqueta">1</div>
+          <h3>Ache o maior!</h3>
+        </div>
+        <p>Entre três valores:</p>
+        <div class="inputGroup">
+          <input type="number" name="maior" id="maior1">
+          <input type="number" name="maior" id="maior2">
+          <input type="number" name="maior" id="maior3">
+        </div>
+        <button onclick="maior()">achar maior</button>
+        <input type="text" name="" id="outputMaior" readonly>
+      </div>
+
+      <div class="excc ex2">
+        <div class="exTitle">
+          <div class="etiqueta">2</div>
+          <h3>Ordem crescente.</h3>
+        </div>
+        <p>Entre três valores:</p>
+        <div class="inputGroup">
+          <input type="number" name="ordem" id="ordem1">
+          <input type="number" name="ordem" id="ordem2">
+          <input type="number" name="ordem" id="ordem3">
+        </div>
+        <button onclick="emOrdem()">pôr em ordem</button>
+        <input type="text" name="" id="outputOrdem" readonly>
+      </div>
+  
+      <div class="excc ex3">
+        <div class="exTitle">
+          <div class="etiqueta">3</div>
+          <h3>É palindromo?</h3>
+        </div>
+        <p>Entre uma frase:</p>
+        <div class="inputGroup">
+          <input type="text" name="palindromo" id="palindromo">
+        </div>
+        <button onclick="palindromo()">testar</button>
+        <input type="text" name="" id="outputPalindromo" readonly>
+      </div>
+  
+      <div class="excc ex4">
+        <div class="exTitle">
+          <div class="etiqueta">4</div>
+          <h3>Triângulos.</h3>
+        </div>
+        <p>Entre três valores:</p>
+        <div class="inputGroup">
+          <input type="number" name="tri" id="tri1">
+          <input type="number" name="tri" id="tri2">
+          <input type="number" name="tri" id="tri3">
+        </div>
+        <button onclick="triangulo()">verificar</button>
+        <input type="text" name="" id="outputTriangulo" readonly>
+      </div>
+    </div>
+    <hr>
+    <button class="refresh" onclick="refresh()">
+      <img id="refresh" src="refresh.jpg" alt="refresh">
+    </button>
+  </div>
+  
+</body>
+</html>
