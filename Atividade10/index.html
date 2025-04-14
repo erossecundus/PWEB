@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 10 - IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="formulario">
+      <h1>I.M.C.</h1>
+      <hr>
+      <form id="formPesquisa">
+
+        <div class="inputForm">
+          <p class="inputTitle">Altura:</p>
+          <div class="inputGroup">
+            <input type="text" name="inputaltura" id="inputaltura">
+          </div>
+        </div>
+
+        <div class="inputForm">
+          <p class="inputTitle">Peso:</p>
+          <div class="inputGroup">
+            <input type="text" name="inputpeso" id="inputpeso">
+          </div>
+        </div>
+
+        <hr>
+        <br>
+
+        <button type="button" onclick="calcular()">Enviar</button>
+      </form>
+
+    </div>
+    <div id="resultado"></div>
+  </div>
+
+</body>
+
+</html>
