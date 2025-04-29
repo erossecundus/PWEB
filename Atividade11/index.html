@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 11 - Criar Objeto</title>
+  <script>
+
+    // usando Object
+    var funcionario1 = new Object();
+
+    funcionario1.matricula = "1234"
+    funcionario1.nome = "João"
+    funcionario1.funcao = "Administrador"
+
+    console.log(`Usando Object:\n
+    matricula= ${funcionario1.matricula}
+    nome= ${funcionario1.nome}
+    funcao= ${funcionario1.funcao}`);
+
+    // usando {}
+    var funcionario2 = {};
+
+    funcionario2.matricula = "2345";
+    funcionario2["nome"] = "Maria";
+    funcionario2["funcao"] = "Cozinheira";
+
+    console.log(`Usando { }:\n
+    matricula= ${funcionario2.matricula}
+    nome= ${funcionario2.nome}
+    funcao= ${funcionario2["funcao"]}`);
+
+    // literal
+    var funcionario3 = {
+      matricula: "13",
+      nome: "Lula",
+      funcao: "Torneiro Mecânico"
+    }
+    
+    console.log(`Usando Literal:\n
+    matricula= ${funcionario3.matricula}
+    nome= ${funcionario3.nome}
+    funcao= ${funcionario3.funcao}`)
+  </script>
+</head>
+
+<body>
+Exemplos no console
+</body>
+
+</html>

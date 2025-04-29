@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 12 - Objetos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="formulario">
+      <h1>Objetos</h1>
+      <hr>
+      <div class="formsGroup">
+        <form id="formRetangulo">
+
+          <div>
+            <div class="inputForm">
+              <p class="inputTitle">Altura:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputaltura" id="inputaltura">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Largura:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputlargura" id="inputlargura">
+              </div>
+            </div>
+            <br>
+          </div>
+  
+          <button type="button" onclick="area()">Calcular Área</button>
+        </form>
+  
+        <hr>
+  
+        <form id="formContaCorrente">
+  
+          <div>
+            <div class="inputForm">
+              <p class="inputTitle">Nome:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputnomeCC" id="inputnomeCC">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Banco:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputbancoCC" id="inputbancoCC">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">N. Conta:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputnumcontaCC" id="inputnumcontaCC">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Saldo:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputsaldoCC" id="inputsaldoCC">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Saldo Especial:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputsaldoespecialCC" id="inputsaldoespecialCC">
+              </div>
+            </div>
+            
+            <br>
+          </div>
+  
+          <button type="button" onclick="criarContaC()">Criar Conta Corrente</button>
+        </form>
+  
+        <hr>
+  
+        <form id="formContaPoupanca">
+  
+          <div>
+            <div class="inputForm">
+              <p class="inputTitle">Nome:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputnomeCP" id="inputnomeCP">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Banco:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputbancoCP" id="inputbancoCP">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">N. Conta:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputnumcontaCP" id="inputnumcontaCP">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Saldo:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputsaldoCP" id="inputsaldoCP">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Juros:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputjurosCP" id="inputjurosCP">
+              </div>
+            </div>
+    
+            <div class="inputForm">
+              <p class="inputTitle">Data Venc.:</p>
+              <div class="inputGroup">
+                <input type="text" name="inputvencimentoCP" id="inputvencimentoCP">
+              </div>
+            </div>
+            
+            <br>
+          </div>
+  
+          <button type="button" onclick="criarContaP()">Criar Conta Poupança</button>
+        </form>  
+      </div>
+      
+    </div>
+    <div id="resultado"></div>
+  </div>
+</body>
+
+</html>
