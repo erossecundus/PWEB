@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FATEC - Escolha de Curso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Escolha seu Curso</h1>
+    <div class="inputGroup">
+      <label for="selectCurso">Cursos da FATEC Sorocaba:</label>
+      <select id="selectCurso" onchange="selecionarCurso()">
+        <option value="">Selecione...</option>
+        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+        <option value="fm">Fabricação Mecânica</option>
+        <option value="ge">Gestão Empresarial</option>
+        <option value="log">Logística</option>
+        <option value="pol">Polímeros</option>
+        <option value="pp">Processos de Produção</option>
+        <option value="pr">Projetos Mecânicos</option>
+        <option value="rm">Rede de Computadores</option>
+        <option value="si">Sistemas Biomédicos</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

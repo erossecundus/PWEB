@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 15 - Validar Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form name="formulario">
+      <h1>Formulário Principal</h1>
+      <hr width="100%">
+
+      <label for="inputName">Nome</label>
+      <input type="text" name="inputName" id="inputName">
+
+      <label for="inputEmail">Email</label>
+      <input type="email" name="inputEmail" id="inputEmail">
+
+      <label for="inputComent">Comentário</label>
+      <textarea name="inputComent" id="inputComent"></textarea>
+
+      <h2>Pesquisa:</h2>
+      <p>Primeira vez nessa página?</p>
+
+      <div class="inputGroup">
+        <label for="inputPesquisaSim">
+          <input type="radio" name="inputPesquisa" id="inputPesquisaSim">Sim
+        </label>
+        <label for="inputPesquisaNao">
+          <input type="radio" name="inputPesquisa" id="inputPesquisaNao">Não
+        </label>
+      </div>
+
+      <br>
+      <hr width="100%">
+      <br>
+
+      <div class="inputGroup">
+        <button type="submit" name="btnEnviar">Enviar</button>
+        <button type="reset" name="btnLimpar">Limpar</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
