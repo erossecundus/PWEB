@@ -1,26 +1,23 @@
-
 // demonstração de um modulo carregado
 //let mod = require('./modulo1');
 
 let app = require('./app/config/server'); // carregando o módulo do servidor
 
-app.get('/', function(req,res) {
-  res.render("home/index");
-});
+let rotaHome = require('./app/routes/home'); // define a rota
+rotaHome(app); // está executando
 
-app.get('/admin/formulario_adicionar_usuario', function(req,res) {
-  res.render("admin/adicionar_usuario");
-});
+let rotaAdicionaUsuario = require('./app/routes/adiciona_usuario');
+rotaAdicionaUsuario(app);
 
-app.get('/informacao/historia', function(req,res) {
-  res.render("informacao/historia");
-});
-app.get('/informacao/cursos', function(req,res) {
-  res.render("informacao/cursos");
-});
-app.get('/informacao/professores', function(req,res) {
-  res.render("informacao/professores");
-});
+let rotaHistoria = require('./app/routes/historia');
+rotaHistoria(app);
+
+let rotaCursos = require('./app/routes/cursos');
+rotaCursos(app);
+
+let rotaProfessores = require('./app/routes/professores');
+rotaProfessores(app);
+// poderiam ser executados em linha direto...
 
 app.listen(3000, function() {
   console.log("Servidor com express foi carregado!");
