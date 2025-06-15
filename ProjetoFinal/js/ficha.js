@@ -15,13 +15,13 @@ if (filme) {
   document.getElementById("duracao-filme").textContent = filme.duracao;
   document.getElementById("dataadd-filme").textContent = dataFormatada;
   document.getElementById("classificacao-filme").textContent = filme.classificacao;
-  document.getElementById("nota-filme").textContent = filme.notaUsuario.toFixed(1);
+  document.getElementById("nota-filme").textContent = parseFloat(filme.notaUsuario).toFixed(1);
   document.getElementById("elenco-filme").textContent = filme.elenco;
   document.getElementById("sinopse-filme").textContent = filme.sinopse;
   document.getElementById("poster-filme").src = filme.poster;
   document.getElementById("poster-filme").alt = `Poster de ${filme.titulo}`;
 } else {
-  // exibir mensagem de erro
+  alert("Filme não encontrado.");
 }
 
-document.querySelector("#btnEditar").href = `add.html?id=${filme.id}`;
+document.querySelector("#btnEditar").href = `cadastro.html?id=${filme.id}`;

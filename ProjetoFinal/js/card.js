@@ -4,7 +4,7 @@ function createMovieCard(movie) {
     : movie.sinopse;
 
   return `
-    <div class="col">
+    <div class="col card-filme">
       <div class="card shadow-white h-100">
         <img src="${movie.poster}" class="card-img-top" alt="${movie.titulo}">
         <div class="card-body">
