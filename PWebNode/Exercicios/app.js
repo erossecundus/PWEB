@@ -3,6 +3,7 @@
 
 let app = require('./app/config/server'); // carregando o módulo do servidor
 
+/* Foi usado o consign para essas rotas....
 let rotaHome = require('./app/routes/home'); // define a rota
 rotaHome(app); // está executando
 
@@ -18,6 +19,7 @@ rotaCursos(app);
 let rotaProfessores = require('./app/routes/professores');
 rotaProfessores(app);
 // poderiam ser executados em linha direto...
+*/
 
 app.listen(3000, function() {
   console.log("Servidor com express foi carregado!");

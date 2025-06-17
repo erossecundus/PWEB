@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhe do Professor - Fatec Sorocaba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #800000;
+    }
+    table#tabela1 {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table#tabela1 th, table#tabela1 td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: left;
+    }
+    table#tabela1 tr.cabeca {
+      background-color: #eee;
+      font-weight: bold;
+    }
+    table#tabela1 tr td {
+      background-color: #ffc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Detalhes do Professor</h1>
+
+  <table id="tabela1">
+    <tr class="cabeca">
+      <td>ID</td>
+      <td>Nome</td>
+      <td>E-mail</td>
+    </tr>
+    <tr>
+      <td><%= profs[0].ID_PROFESSOR %></td>
+      <td><%= profs[0].NOME_PROFESSOR %></td>
+      <td><%= profs[0].EMAIL_PROFESSOR %></td>
+    </tr>
+  </table>
+
+</body>
+</html>
